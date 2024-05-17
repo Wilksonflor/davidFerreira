@@ -1,5 +1,5 @@
 import { NavBar } from "../../components/navBar/NavBar";
-
+import david from '../../assets/img/david.jpg'
 import styles from "./Home.module.css";
 import { FaBalanceScale } from "react-icons/fa";
 
@@ -9,7 +9,7 @@ export const Home = () => {
       <NavBar />
       <section className={styles.sectionSobre}>
         <img
-          src="https://www.pexels.com/pt-br/foto/homem-vestindo-paleto-preto-formal-32976/"
+          src={david}
           alt="homem-vestindo-paleto-preto-formal"
         />
         <div className={styles.textSobre}>

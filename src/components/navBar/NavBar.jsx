@@ -1,7 +1,7 @@
 import { useState } from "react";
-
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./NavBar.module.css";
+import logo from "../../assets/img/logo.png";
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
 
 export const NavBar = () => {
@@ -9,13 +9,20 @@ export const NavBar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    console.log("clicou");
   };
+
+  const closeMenu = () =>{
+    setMenuOpen(false)
+  }
   return (
     <>
       <header>
         <Link>
-          <h3>logo</h3>
+          <img
+            src={logo}
+            alt="Logomarca de david Ferreira"
+            className={styles.logo}
+          />
         </Link>
 
         <button className={styles.menuMobile} onClick={toggleMenu}>
@@ -25,16 +32,16 @@ export const NavBar = () => {
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ""} `}>
           <ul>
             <li>
-              <Link to={"/"}>Inicio</Link>
+              <Link to={"/"} onClick={closeMenu}>Inicio</Link>
             </li>
             <li>
-              <Link to={"/sobre"}>Sobre</Link>
+              <Link to={"/sobre"} onClick={closeMenu}>Sobre</Link>
             </li>
             <li>
-              <Link to={"/servicos"}>Serviços</Link>
+              <Link to={"/servicos"} onClick={closeMenu}>Serviços</Link>
             </li>
             <li>
-              <Link to={"contato"}>Contato</Link>
+              <Link to={"contato"} onClick={closeMenu}>Contato</Link>
             </li>
           </ul>
         </nav>

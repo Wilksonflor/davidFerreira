@@ -1,0 +1,62 @@
+.nossosServicos {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.nossosServicos h2 {
+  margin-block: 20px;
+}
+
+.nossosServicos p {
+  margin-block: 20px;
+}
+.boxServicos {
+  margin-block: 20px;
+
+  width: 350px;
+  height: 220px;
+  max-width: 400px;
+  padding: 15px 10px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  margin-block: 10px;
+  transition: 0.3s linear;
+}
+
+.boxServicos:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.boxServicos p {
+  font-weight: 400;
+}
+
+.boxServicos span {
+  color: #e1ad3d;
+  font-size: 2rem;
+}
+
+.carrossel {
+  display: flex;
+}
+
+@media (max-width: 420px) {
+  .sectionSobre {
+    flex-direction: column;
+  }
+  .sectionSobre img {
+    width: 95%;
+    max-height: 300px;
+  }
+  .textSobre {
+    width: 95%;
+    padding: 0;
+  }
+  .textSobre h1 {
+    font-size: 1.5rem;
+  }
+  .textSobre p {
+    font-size: 1rem;
+  }
+}

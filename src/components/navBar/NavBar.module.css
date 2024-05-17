@@ -1,12 +1,25 @@
 header {
   width: 100%;
-  height: 70px;
+  height: 80px;
 
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-color: #1f1a1a;
   color: #fff;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 300px;
+  height: 80px;
+}
+
+.logo a {
+  text-decoration: none;
 }
 
 header .nav {
@@ -51,8 +64,14 @@ li a:hover {
   header {
     justify-content: space-between;
     padding-inline: 20px;
+    /* height: 120px; */
   }
 
+  .logo {
+    width: 220px;
+    height: 80px;
+    /* object-fit: cover; */
+  }
   .menuMobile {
     display: flex;
   }

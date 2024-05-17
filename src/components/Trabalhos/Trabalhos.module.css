@@ -11,8 +11,6 @@
   margin-block: 20px;
 }
 .boxServicos {
-  margin-block: 20px;
-
   width: 350px;
   height: 220px;
   max-width: 400px;
@@ -58,5 +56,17 @@
   }
   .textSobre p {
     font-size: 1rem;
+  }
+  .boxServicos {
+    max-width: 350px;
+  }
+  .boxServicos p {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 868px) {
+  .boxServicos {
+    max-width: 380px;
   }
 }

@@ -21,11 +21,12 @@
 .textSobre h1 {
   text-align: center;
   margin-block: 10px;
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
 }
 
 .textSobre p {
   font-size: 1.1rem;
+  text-align: center;
 }
 
 @media (max-width: 420px) {

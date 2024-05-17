@@ -3,15 +3,14 @@ import { NavBar } from "../../components/navBar/NavBar";
 import styles from "./Home.module.css";
 import { FaBalanceScale } from "react-icons/fa";
 
-
 export const Home = () => {
   return (
     <>
       <NavBar />
       <section className={styles.sectionSobre}>
         <img
-          src="https://images.pexels.com/photos/8428055/pexels-photo-8428055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
+          src="https://www.pexels.com/pt-br/foto/homem-vestindo-paleto-preto-formal-32976/"
+          alt="homem-vestindo-paleto-preto-formal"
         />
         <div className={styles.textSobre}>
           <h1>
@@ -24,8 +23,6 @@ export const Home = () => {
           </p>
         </div>
       </section>
-
-      
     </>
   );
 };

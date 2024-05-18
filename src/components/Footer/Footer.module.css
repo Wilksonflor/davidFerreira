@@ -3,80 +3,93 @@
   margin-top: 140px;
   padding: 40px 0px;
 }
-.logoFooter{
-
-    width: 300px;
-    /* height: 200px; */
+.logoFooter {
+  width: 300px;
+  /* height: 200px; */
 }
 .footer {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 150px;
-    /* padding: 40px 0px; */
-    width: 100%;
-    background-color: #1c1d1e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 150px;
+  /* padding: 40px 0px; */
+  width: 100%;
+  background-color: #1c1d1e;
 
-    /* height: 200px; */
-  }
-  
-  footer a {
-    text-decoration: none;
-  }
-  
-  .navFooter {
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer ul {
+  /* height: 200px; */
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.navFooter {
+  display: flex;
+  align-items: center;
+}
+
+.footer ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.footer li {
+  margin-block: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.socialIcons {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+.iconInsta {
+  color: #833ab4;
+}
+.iconWp {
+  color: green;
+}
+.X {
+  color: #fff;
+}
+.developer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+}
+.developer span {
+  color: #e1ad3d;
+  font-weight: bold;
+}
+
+@media (max-width: 367px) {
+  .logoFooter {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
   }
-  .footer li {
+  .socialIcons {
+    justify-content: space-around;
+
     margin-block: 10px;
+    width: 80%;
   }
-  
-  ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.3rem;
+  .navFooter ul {
+    flex-direction: column;
   }
- 
-
-  .socialIcons{
-
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 2rem;
-  }
-  .iconInsta{
-    color: #833ab4;
-  }
-  .iconWp{
-    color: green;
-  }
-  .X{
-    color: #fff;
-  }
-  .developer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    /* border: solid red; */
-    font-size: 1rem;
-    border-top: 1px solid #fff;
-    padding-top: 10px;
-    
-  }
-  .developer span{
-    color: #e1ad3d;
-    font-weight: bold;
-  }
+}

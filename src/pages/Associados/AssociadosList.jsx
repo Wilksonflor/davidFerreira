@@ -30,7 +30,7 @@ export const associados = [
   },
   {
     nome: "Maria Madalena",
-    area: "Direito tributário e Direito ambiental",
+    area: "Direito internacional e Direito ambiental",
     foto: mariaMadalena,
     instagram: "https://www.instagram.com/",
     twitter:

@@ -17,6 +17,7 @@ export const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur
             debitis quaerat, saepe necessitatibus nesciunt
           </p>
+          <button>Fale conosco</button>
         </div>
       </section>
     </>

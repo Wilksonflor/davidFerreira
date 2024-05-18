@@ -16,19 +16,39 @@
 .textSobre {
   width: 50%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .textSobre h1 {
   text-align: center;
-  margin-block: 10px;
+  margin-bottom: 5px;
   font-size: clamp(1.8rem, 4vw, 2.7rem);
 }
 
 .textSobre p {
   font-size: 1.1rem;
   text-align: center;
+  margin-bottom: 20px;
 }
-
+.textSobre button {
+  cursor: pointer;
+  width: 150px;
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 8px;
+  transition: 0.3s linear;
+}
+.textSobre button:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
 @media (max-width: 420px) {
   .sectionSobre {
     flex-direction: column;

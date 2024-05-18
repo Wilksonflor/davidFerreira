@@ -39,6 +39,13 @@
   display: flex;
 }
 
+@media (max-width: 868px) {
+  .boxServicos {
+    max-width: 350px;
+    max-height: 230px;
+  }
+}
+
 @media (max-width: 420px) {
   .sectionSobre {
     flex-direction: column;
@@ -58,6 +65,7 @@
     font-size: 1rem;
   }
   .boxServicos {
+
     max-width: 350px;
   }
   .boxServicos p {
@@ -65,8 +73,3 @@
   }
 }
 
-@media (max-width: 868px) {
-  .boxServicos {
-    max-width: 380px;
-  }
-}

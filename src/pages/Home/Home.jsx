@@ -2,7 +2,7 @@ import { NavBar } from "../../components/navBar/NavBar";
 import david from "../../assets/img/david.jpg";
 import styles from "./Home.module.css";
 import { FaBalanceScale } from "react-icons/fa";
-
+import { IoLogoWhatsapp } from "react-icons/io"
 export const Home = () => {
   return (
     <>
@@ -17,7 +17,7 @@ export const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur
             debitis quaerat, saepe necessitatibus nesciunt
           </p>
-          <button>Fale conosco</button>
+          <button>Fale conosco <IoLogoWhatsapp className={styles.iconWhats}/></button>
         </div>
       </section>
     </>

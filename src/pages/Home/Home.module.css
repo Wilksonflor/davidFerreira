@@ -31,6 +31,7 @@
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 20px;
+
 }
 .textSobre button {
   cursor: pointer;
@@ -43,12 +44,21 @@
   font-weight: 500;
   padding: 8px;
   transition: 0.3s linear;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .textSobre button:hover {
   background-color: #fff;
   border: 1px solid #000;
   color: #000;
 }
+
+.iconWhats{
+  font-size: 1.5rem;
+  /* color: #fff; */
+}
+
 @media (max-width: 420px) {
   .sectionSobre {
     flex-direction: column;

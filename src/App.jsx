@@ -1,4 +1,5 @@
 import "./App.css";
+import { Footer } from "./components/Footer/Footer";
 import { NossosTrabalhos } from "./components/Trabalhos/NossosTrabalhos";
 import { Associados } from "./pages/Associados/Associados";
 
@@ -9,7 +10,8 @@ function App() {
     <>
       <Home />
       <NossosTrabalhos />
-      <Associados/>
+      <Associados />
+      <Footer />
     </>
   );
 }

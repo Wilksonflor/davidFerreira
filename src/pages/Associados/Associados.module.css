@@ -1,0 +1,76 @@
+.associadosSection {
+  text-align: center;
+}
+
+.associadosContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.associadoCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  width: 300px;
+  max-height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.9);
+}
+
+.associadoCard img {
+  width: 100%;
+  padding: 10px;
+  max-height: 400px;
+}
+
+.socialLinks {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background-color: #232424;
+  border-radius: 15px;
+  position: absolute;
+  top: 320px;
+  /* left: 50%; */
+  padding: 5px;
+
+  transform: translateX(-50%, -50%);
+}
+
+.socialLinks a {
+  text-decoration: none;
+  color: #e1ad3d;
+}
+
+.socialLinks a:hover {
+  opacity: 0.8;
+}
+
+.associadosDescricao {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 355px;
+  left: 30px;
+  width: 85%;
+  height: 50px;
+  transform: translateX(-50%, 50%);
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding-top: 5px;
+  box-shadow: 0px 0px 8px 0px #ddd;
+}
+
+.associadosDescricao p {
+  font-size: 0.8rem;
+}

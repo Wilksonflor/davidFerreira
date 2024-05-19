@@ -5,6 +5,14 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
 export const Footer = () => {
+  const handleAnchorClick = (event, id) => {
+    event.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className={styles.footer} id="contato">
       <Row
@@ -37,16 +45,30 @@ export const Footer = () => {
           <nav className={styles.navFooter}>
             <ul>
               <li>
-                <Link to={"/"}>Inicio</Link>
+                <Link to="/" onClick={(e) => handleAnchorClick(e, "home")}>
+                  Inicio
+                </Link>
               </li>
               <li>
-                <Link to={"/sobre"}>Sobre</Link>
+                <a href="#sobre" onClick={(e) => handleAnchorClick(e, "sobre")}>
+                  Sobre
+                </a>
               </li>
               <li>
-                <Link to={"/servicos"}>Serviços</Link>
+                <a
+                  href="#servicos"
+                  onClick={(e) => handleAnchorClick(e, "servicos")}
+                >
+                  Serviços
+                </a>
               </li>
               <li>
-                <Link to={"contato"}>Contato</Link>
+                <a
+                  href="#contato"
+                  onClick={(e) => handleAnchorClick(e, "contato")}
+                >
+                  Contato
+                </a>
               </li>
             </ul>
           </nav>

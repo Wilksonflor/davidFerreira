@@ -4,7 +4,7 @@ import styles from "./Trabalhos.module.css";
 export const NossosTrabalhos = () => {
   return (
     <>
-      <section className={styles.nossosServicos}>
+      <section className={styles.nossosServicos} id="servicos">
         <h2>Nossos serviços</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
@@ -17,7 +17,6 @@ export const NossosTrabalhos = () => {
             dots={false}
             className={styles.carrossel}
             responsive={[
-              
               {
                 breakpoint: 1700,
                 settings: {

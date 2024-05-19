@@ -53,6 +53,7 @@ ul li a {
   justify-content: space-evenly;
   font-size: 2rem;
 }
+
 .iconInsta {
   color: #833ab4;
 }
@@ -67,18 +68,43 @@ ul li a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 5px;
   width: 100%;
 
+  margin-top: 15px;
   font-size: clamp(0.8rem, 2vw, 1.1rem);
 
   border-top: 1px solid #fff;
   padding-top: 10px;
 }
+
 .developer span {
   color: #e1ad3d;
   font-weight: bold;
 }
 
+.mapa {
+  margin-top: 10px;
+  width: 80%;
+}
+
+.iconMap {
+  color: red;
+}
+
+@media (min-width: 769px) and (max-width: 920px) {
+  .footer {
+    width: 100%;
+
+    flex-wrap: wrap;
+  }
+  .navFooter ul {
+    flex-direction: column;
+  }
+  .developer {
+    width: 100%;
+  }
+}
 @media (max-width: 367px) {
   .logoFooter {
     width: 100%;
@@ -91,5 +117,9 @@ ul li a {
   }
   .navFooter ul {
     flex-direction: column;
+  }
+  .mapa {
+    width: 100%;
+    height: 200px;
   }
 }

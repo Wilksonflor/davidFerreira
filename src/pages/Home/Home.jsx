@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <>
       <NavBar />
-      <section className={styles.sectionSobre}>
+      <section className={styles.sectionSobre} id="sobre">
         <img src={david} alt="homem-vestindo-paleto-preto-formal" />
         <div className={styles.textSobre}>
           <h1>

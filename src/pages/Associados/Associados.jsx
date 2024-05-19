@@ -1,11 +1,10 @@
-import React from "react";
 import styles from "./Associados.module.css";
 import { associados } from "./AssociadosList";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 export const Associados = () => {
   return (
-    <section className={styles.associadosSection}>
+    <section className={styles.associadosSection} id="associados">
       <h2>Nossos Associados</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iure!

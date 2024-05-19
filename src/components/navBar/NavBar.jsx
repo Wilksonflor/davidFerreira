@@ -1,26 +1,37 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./NavBar.module.css";
 import logo from "../../assets/img/logo.png";
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const closeMenu = () =>{
-    setMenuOpen(false)
-  }
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  const handleAnchorClick = (event, id) => {
+    event.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    closeMenu();
+  };
+
   return (
     <>
       <header>
-        <Link>
+        <Link to="/">
           <img
             src={logo}
-            alt="Logomarca de david Ferreira"
+            alt="Logomarca de David Ferreira"
             className={styles.logo}
           />
         </Link>
@@ -29,30 +40,46 @@ export const NavBar = () => {
           {menuOpen ? <IoCloseSharp /> : <IoMenu />}
         </button>
 
-        <nav className={`${styles.nav} ${menuOpen ? styles.open : ""} `}>
+        <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
           <ul>
             <li>
-              <Link to={"/"} onClick={closeMenu}>Inicio</Link>
+              <Link to="/" onClick={closeMenu}>
+                Inicio
+              </Link>
             </li>
             <li>
-              <Link to={"/sobre"} onClick={closeMenu}>Sobre</Link>
+              <a href="#sobre" onClick={(e) => handleAnchorClick(e, "sobre")}>
+                Sobre
+              </a>
             </li>
             <li>
-              <Link to={"/servicos"} onClick={closeMenu}>Serviços</Link>
+              <a
+                href="#servicos"
+                onClick={(e) => handleAnchorClick(e, "servicos")}
+              >
+                Serviços
+              </a>
             </li>
             <li>
-              <Link to={"contato"} onClick={closeMenu}>Contato</Link>
+              <a
+                href="#associados"
+                onClick={(e) => handleAnchorClick(e, "associados")}
+              >
+                Associados
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#contato"
+                onClick={(e) => handleAnchorClick(e, "contato")}
+              >
+                Contato
+              </a>
             </li>
           </ul>
         </nav>
       </header>
-
-      {/* <Routes>
-        <Route path="/" element="" />
-        <Route path="" element="" />
-        <Route path="" element="" />
-        <Route path="" element="" />
-      </Routes> */}
     </>
   );
 };

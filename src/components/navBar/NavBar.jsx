@@ -6,7 +6,7 @@ import { IoMenu, IoCloseSharp } from "react-icons/io5";
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);

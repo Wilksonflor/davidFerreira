@@ -97,7 +97,7 @@ export const Footer = () => {
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7888.082222888345!2d-35.5980941!3d-8.6876405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3d7b32dbe6dd%3A0x4dbf239e2fbdab84!2sDF%20David%20Ferreira%20Advocacia%20e%20Consultoria%20Jur%C3%ADdica!5e0!3m2!1spt-BR!2sbr!4v1716124933431!5m2!1spt-BR!2sbr"
             width="500"
             height="450"
-            allowFullScreen
+            allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className={styles.mapa}

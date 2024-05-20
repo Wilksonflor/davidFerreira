@@ -21,7 +21,7 @@ export const associados = [
       "https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQiLCJteCI6IjIifQ%3D%3D%22%7D",
   },
   {
-    nome: "David Ferreira",
+    nome: "Flávio Barros",
     area: "Direito Penal e Direito administrativo",
     foto: david,
     instagram: "https://www.instagram.com/",

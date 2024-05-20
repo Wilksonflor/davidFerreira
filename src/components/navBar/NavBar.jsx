@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./NavBar.module.css";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logonovo.png";
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
 
 export const NavBar = () => {

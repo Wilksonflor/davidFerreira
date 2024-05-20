@@ -31,7 +31,6 @@
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 20px;
-
 }
 .textSobre button {
   cursor: pointer;
@@ -53,8 +52,13 @@
   border: 1px solid #000;
   color: #000;
 }
+.iconBalanca {
+  color: #e1ad3d;
+  font-weight: bold;
+  /* border: solid red;  */
+}
 
-.iconWhats{
+.iconWhats {
   font-size: 1.5rem;
   /* color: #fff; */
 }

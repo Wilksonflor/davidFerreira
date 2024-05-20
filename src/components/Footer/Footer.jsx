@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logonovo.png";
 import { Row, Col } from "antd";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import styles from "./Footer.module.css";
@@ -94,7 +94,7 @@ export const Footer = () => {
           </h2>
 
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7888.082222888345!2d-35.5980941!3d-8.6876405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3d7b32dbe6dd%3A0x4dbf239e2fbdab84!2sDF%20David%20Ferreira%20Advocacia%20e%20Consultoria%20Jur%C3%ADdica!5e0!3m2!1spt-BR!2sbr!4v1716124933431!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.0486055270903!2d-35.59952842416462!3d-8.686927988474748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x700a06821592523%3A0x28f1213c8af98977!2sAv.%20Abel%20Fraga%2C%2034%20-%20Palmares%2C%20PE%2C%2055540-000!5e0!3m2!1spt-BR!2sbr!4v1716220913776!5m2!1spt-BR!2sbr"
             width="500"
             height="450"
             allowFullScreen=""
